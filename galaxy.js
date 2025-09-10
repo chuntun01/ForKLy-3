@@ -157,7 +157,7 @@ fontLoader.load(
     });
     scene.add(textGroup);
 
-    const newTexts = ["i know that ", "you are not acept me"];
+    const newTexts = [];
     newTexts.forEach((text, index) => {
       const textGeometry = new TextGeometry(text, {
         font: font,
