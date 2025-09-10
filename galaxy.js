@@ -157,7 +157,7 @@ fontLoader.load(
     });
     scene.add(textGroup);
 
-    const newTexts = ["Forever Yours", "Eternal Love"];
+    const newTexts = ["i know that ", "you are not acept me"];
     newTexts.forEach((text, index) => {
       const textGeometry = new TextGeometry(text, {
         font: font,
@@ -200,7 +200,7 @@ fontLoader.load(
     });
     scene.add(textGroup);
 
-    const newTexts = ["Forever Yours", "Eternal Love"];
+    const newTexts = ["hope you like this", "i love you"];
     newTexts.forEach((text, index) => {
       const textGeometry = new TextGeometry(text, {
         size: 0.5,
@@ -225,7 +225,7 @@ fontLoader.load(
 
 const floatingImageFrames = [];
 const floatingImages = window.dataLove.floatingImages || [];
-const DUPLICATES_PER_IMAGE = 30;
+const DUPLICATES_PER_IMAGE = 20;
 const IMAGE_SIZE = 1.5;
 const BORDER_THICKNESS = 0.05;
 const RADIUS_RANGE = 12;
@@ -403,7 +403,7 @@ floatingImages.forEach((imagePath) => {
         imageMesh.position.z = 0.001;
 
         const angle = Math.random() * Math.PI * 2;
-        const currentRadius = 5 + Math.random() * RADIUS_RANGE * 1.5;
+        const currentRadius = 10 + Math.random() * RADIUS_RANGE * 1.5;
         frameGroup.position.x = Math.cos(angle) * currentRadius;
         frameGroup.position.z = Math.sin(angle) * currentRadius;
         frameGroup.position.y = (Math.random() - 0.5) * RADIUS_RANGE * 1.2;

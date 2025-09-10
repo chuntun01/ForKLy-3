@@ -44,7 +44,7 @@
       const submitBtn = document.getElementById("submit");
 
       // Đặt mật khẩu đúng ở đây
-      const CORRECT_PASSWORD = "123456";
+      const CORRECT_PASSWORD = "051204";
 
       let enteredPassword = "";
 
@@ -71,7 +71,7 @@
       submitBtn.addEventListener("click", () => {
         if (enteredPassword === CORRECT_PASSWORD) {
           // Chuyển hướng đến trang success.html khi mật khẩu đúng
-          window.location.href = "happy birtday.html";
+          window.location.href = "lastStep.html";
         } else {
           // Rung màn hình và xóa mật khẩu khi sai
           passwordDisplay.classList.add("shake");
